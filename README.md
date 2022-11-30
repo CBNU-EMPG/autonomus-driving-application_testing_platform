@@ -10,8 +10,8 @@
             wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh
             chmod 755 ./install_ros_melodic.sh 
             bash ./install_ros_melodic.sh
-        <code>
-     <pre>
+        </code>
+     </pre>
      + Depandant ROS 패키지 설치</br>
     <pre>
         <code>
