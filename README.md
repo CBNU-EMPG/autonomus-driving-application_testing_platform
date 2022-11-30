@@ -29,4 +29,16 @@
           echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
         </code>
     </pre>
-        
+    + RPI 마스터 설정</br>
+    <pre>
+        <code>
+          export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311
+          export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
+        </code>
+    </pre>
+    
+    
+    
+    
+    
+       
