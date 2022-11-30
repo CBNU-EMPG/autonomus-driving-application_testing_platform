@@ -36,9 +36,36 @@
           export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
         </code>
     </pre>
+    + LDS-02 driver</br>
+    <pre>
+        <code>
+          sudo apt update
+          sudo apt install libudev-dev
+          cd ~/catkin_ws/src
+          git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
+          cd ~/catkin_ws/src/turtlebot3 && git pull
+          rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+          cd ~/catkin_ws && catkin_make
+        </code>
+    </pre>
     
     
+> ## SLAM    
+    +remote PC</br>
+    <pre>
+        <code>
+          roscore
+          export TURTLEBOT3_MODEL=burger
+          roslaunch turtlebot3_slam turtlebot3_slam.launch
+          roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+          rosrun map_server map_saver -f ~/map
+        </code>
+    </pre>
+
+
+
+
+
+
     
-    
-    
-       
+      
