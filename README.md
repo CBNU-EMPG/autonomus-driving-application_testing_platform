@@ -61,6 +61,18 @@
           rosrun map_server map_saver -f ~/map
         </code>
     </pre>
+    
+> ## Navigation    
+    +remote PC</br>
+    <pre>
+        <code>
+          roscore
+          export TURTLEBOT3_MODEL=burger
+          roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+        </code>
+    </pre>   
+
+    
 
 
 
